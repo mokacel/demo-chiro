@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@source "../../../content/**/*";
+
+@theme static {
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono: 'Inconsolata', monospace;
+
+  --color-primary-50:  #f2f7f4;
+  --color-primary-100: #ddeee4;
+  --color-primary-200: #bdddcb;
+  --color-primary-300: #90c4a8;
+  --color-primary-400: #5da47f;
+  --color-primary-500: #3a8560;
+  --color-primary-600: #2b6b4c;
+  --color-primary-700: #24573e;
+  --color-primary-800: #1f4533;
+  --color-primary-900: #1a3829;
+  --color-primary-950: #0d2018;
+}
+
+:root {
+  --color-background: #faf9f7;
+  --color-foreground: #1a1a18;
+  --color-border: #e8e4de;
+  --color-muted: #f2efe9;
+  --color-muted-foreground: #6b6860;
+}
+
+.dark {
+  --color-background: #111210;
+  --color-foreground: #f0ede8;
+  --color-border: #2a2a26;
+  --color-muted: #1c1c18;
+  --color-muted-foreground: #9a9790;
+  --color-primary-500: #5da47f;
+}
+
+::selection {
+  color: #faf9f7;
+  background-color: var(--color-primary-500);
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.dark ::selection {
+  color: #111210;
+  background-color: var(--color-primary-400);
+}
