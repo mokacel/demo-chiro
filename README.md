@@ -10,8 +10,6 @@ Client website boilerplate by [Maurine Kacel](https://moestudio.co). Nuxt 4 + Ta
 | Content | Nuxt Content v3 (markdown + YAML) |
 | Styling | Tailwind CSS 4 |
 | Icons | lucide-vue-next |
-| Animations | motion-v |
-| SEO | nuxt-og-image |
 
 ## To rebrand for a new client
 
